@@ -64,7 +64,15 @@ main img {
   background-attachment: fixed;
 }
 
-main button {
+main .watch {
+  padding: 7px 60px;
+  font-size: 15px;
+  border: 1px solid #009c7c;
+  background-color: #009c7c;
+  color: #ffffff;
+}
+
+.watch:hover {
   background-color: #00755d;
-  margin: 20px;
+  border: #00755d;
 }
