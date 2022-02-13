@@ -56,7 +56,8 @@ header .wrap .left .menu {
 }
 
 main img {
-  height: 400px;
+  height: 600px;
+  object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
