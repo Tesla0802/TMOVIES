@@ -57,11 +57,11 @@ header .wrap .left .menu {
 
 main img {
   height: 487px;
-  object-fit: cover;
+  object-fit: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 main .watch {
@@ -70,9 +70,18 @@ main .watch {
   border: 1px solid #009c7c;
   background-color: #009c7c;
   color: #ffffff;
+  position: absolute;
+  top: -50px;
+  left: -85px;
 }
 
 .watch:hover {
   background-color: #00755d;
   border: #00755d;
+}
+
+main h5 {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
