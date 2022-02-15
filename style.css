@@ -169,10 +169,15 @@ main .quantity p:hover {
 }
 
 main .list {
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 900px;
   left: 115px;
   margin: 0px;
+}
+
+main .list .Movie {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
