@@ -71,9 +71,10 @@ main img {
 main .watch {
   padding: 7px 60px;
   font-size: 15px;
-  border: 1px solid #009c7c;
+  border: none;
   background-color: #009c7c;
   color: #ffffff;
+  transition: 0.2s;
   position: absolute;
   top: -50px;
   left: -85px;
@@ -81,7 +82,6 @@ main .watch {
 
 .watch:hover {
   background-color: #00755d;
-  border: #00755d;
 }
 
 main h5 {
@@ -160,6 +160,7 @@ main .quantity p {
   top: -0px;
   left: 160px;
   color: #676767;
+  transition: 0.2s;
   margin: 0px auto;
 }
 
@@ -169,11 +170,21 @@ main .quantity p:hover {
 
 main .list {
   position: absolute;
-  top: 750px;
+  top: 900px;
   left: 115px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-main .list img {
-  width: 300px;
-  height: 500px;
+main .list .movieI {
+  width: 317px;
+  height: 178px;
+  margin: 0px;
+}
+
+main .list .movieII {
+  width: 317px;
+  height: 178px;
+  margin: 0px;
 }
