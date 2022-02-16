@@ -197,6 +197,12 @@ main .list img .overley {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+main .list .Movie .movie-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 main .list .Movie .info {
   display: flex;
   justify-content: center;
