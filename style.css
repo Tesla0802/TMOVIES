@@ -169,7 +169,7 @@ main .id iframe {
   position: absolute;
   overflow: hidden;
   border: none;
-  top: 520px;
+  top: 550px;
   left: 100px;
 }
 
@@ -183,7 +183,7 @@ main .continue-watch {
   height: 30px;
   border-radius: 50%;
   position: absolute;
-  top: 800px;
+  top: 815px;
   left: 115px;
 }
 
@@ -227,7 +227,7 @@ main .list .Movie {
   width: 100%;
   height: auto;
   position: absolute;
-  top: -50px;
+  top: -40px;
   left: 7px;
   padding: 150px;
 }
@@ -246,6 +246,7 @@ main .list .Movie .info {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   /* position: absolute;
   top: 310px;
   left: 133px; */
