@@ -227,9 +227,12 @@ main .list .Movie {
   width: 100%;
   height: auto;
   position: absolute;
-  top: -40px;
-  left: 7px;
-  padding: 150px;
+  top: 106px;
+}
+
+main .list .Movie .overley {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 main .list img {
@@ -257,17 +260,31 @@ main .list .Movie .info a {
   text-decoration: none;
 }
 
+main .list .Movie .movie-name .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .list .Movie .movie-name .orig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 15px;
+}
 main .list .Movie .info .movie-title-geo {
   color: #d1d1d1;
   font-size: 20px;
 }
 
-main .list .Movie .info .movie-title-orig {
+main .list .Movie .orig .movie-title-orig {
   color: #676767;
   font-size: 15px;
 }
 
-main .list .Movie .info .movie-title-orig:hover {
+main .list .Movie .orig .movie-title-orig:hover {
   color: #009c7c;
 }
 
