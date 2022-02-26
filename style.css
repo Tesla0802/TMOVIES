@@ -47,7 +47,7 @@ a {
 }
 
 .navigation .menu-icon .nav-icon {
-  background-color: #ffffff;
+  background-color: #0158b5;
   display: block;
   height: 2px;
   width: 25px;
@@ -68,10 +68,12 @@ a {
 
 .navigation .menu-icon .nav-icon::before {
   top: 8px;
+  background-color: #f6ce00;
 }
 
 .navigation .menu-icon .nav-icon::after {
   top: -8px;
+  background-color: #0158b5;
 }
 
 .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -81,11 +83,13 @@ a {
 .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
   transform: rotate(-45deg);
   top: 0px;
+  background-color: #f6ce00;
 }
 
 .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
   transform: rotate(45deg);
   top: 0px;
+  background-color: #0158b5;
 }
 
 .menu-btn {
@@ -135,7 +139,11 @@ a {
 }
 
 .logo {
-  color: #00755d;
+  background-image: linear-gradient(
+    #0158b5 0deg 90deg,
+    #f6ce00 90deg 270deg,
+    #0158b5 270deg 360deg
+  );
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 400;
