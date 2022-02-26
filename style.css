@@ -129,9 +129,14 @@ a {
   }
 }
 
-.logo img {
-  width: 20%;
+.logo {
+  color: #00755d;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
   margin: 0px auto 0px 40px;
   display: flex;
   align-items: center;
+  font-family: "Shojumaru", cursive;
+  letter-spacing: 1px;
 }
