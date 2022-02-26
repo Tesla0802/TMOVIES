@@ -139,11 +139,7 @@ a {
 }
 
 .logo {
-  background-image: linear-gradient(
-    #0158b5 0deg 90deg,
-    #f6ce00 90deg 270deg,
-    #0158b5 270deg 360deg
-  );
+  color: #00755d;
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: 400;
