@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Shojumaru", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Shojumaru", cursive;
+  background-color: #1d1d1d;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navigation */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+}
+
+.navigation .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 20px 10px;
+  z-index: 103;
+}
+
+.navigation .menu-icon .nav-icon {
+  background-color: #ffffff;
+  display: block;
+  height: 2px;
+  width: 25px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.navigation .menu-icon .nav-icon::before,
+.navigation .menu-icon .nav-icon::after {
+  background-color: #ffffff;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all ease-out 0.2s;
+}
+
+.navigation .menu-icon .nav-icon::before {
+  top: 8px;
+}
+
+.navigation .menu-icon .nav-icon::after {
+  top: -8px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* menu */
+
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #111111f1;
+  z-index: 102;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: fade 0.3s;
+}
+
+.menu li a {
+  color: #ffffff;
+  margin: 0px 40px;
+  font-size: 2rem;
+  transition: all ease 0.3s;
+}
+
+.menu li a:hover {
+  font-size: 2.5rem;
+  color: #00755d;
+  transition: all ease 0.3s;
+}
+
+.navigation .menu-btn:checked ~ .menu {
+  display: flex;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.logo img {
+  width: 20%;
+  margin: 0px auto 0px 40px;
+  display: flex;
+  align-items: center;
+}
