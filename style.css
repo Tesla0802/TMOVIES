@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background-color: #00755d;
+  color: #1d1d1d;
+}
+
 /* navigation */
 
 .navigation {
@@ -139,4 +144,36 @@ a {
   align-items: center;
   font-family: "Shojumaru", cursive;
   letter-spacing: 1px;
+}
+
+/* search-box */
+
+.search-box {
+  background-color: #d1d1d111;
+  padding: 3px 20px;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #00755d;
+}
+
+.search-box input::placeholder {
+  color: #00755e9f;
+}
+
+.search-box button {
+  background-color: transparent;
+  color: #00755d;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
