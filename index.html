@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css">
     <script src="./script.js" defer></script>
@@ -38,17 +41,46 @@
     </nav>
     <section id="main-slider">
 
-        <div class="main-slider-box">
-            <div class="main-slider-img">
-                <img src="./img/Tokyo ghoul poster.jpg" alt="Tokyo ghoul">
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-pagination"></div>
             </div>
 
-            <div class="main-slider-text">
-                <div class="bottom-text">
-                    <div class="movie-name"></div>
+
+            <div class="main-slider-box">
+
+                <a href="#" class="main-slide-overlay">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+                <div class="main-slider-img">
+                    <img src="./img/Tokyo ghoul poster.jpg" alt="Tokyo ghoul">
+                </div>
+
+                <div class="main-slider-text">
+                    <span class="quality">
+                        High quality
+                    </span>
+                    <div class="bottom-text">
+
+                        <div class="movie-name">
+                            <span>2014</span>
+                            <strong>Tokyo Ghoul</strong>
+                        </div>
+
+                        <div class="category-rating">
+                            <div class="category">
+                                <a href="#">Horror</a>,<a href="#">Fantasy</a>,<a href="#">Animation</a>
+                            </div>
+                            <div class="rating">
+                                <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 8.0
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
     </section>
 
