@@ -212,6 +212,7 @@ a {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  user-select: none;
 }
 
 .main-slider-text {
@@ -316,4 +317,26 @@ a {
 .main-slider-box:hover .main-slide-overlay {
   top: 0px;
   transition: all ease 0.3s;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+  transform: translate(0, 0);
+  margin: 10px 0px 0px 20px !important;
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1170px;
+  width: 100%;
+  margin: 10px auto 0px auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
+  font-weight: 800;
+  color: #009c7c;
 }
