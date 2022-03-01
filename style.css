@@ -194,7 +194,7 @@ a {
 }
 
 .main-slider-box {
-  width: 300px;
+  width: 100%px;
   height: 450px;
   box-shadow: 2px 2px 10px #0000001a;
   border: 1px solid #0e0e0ec2;
