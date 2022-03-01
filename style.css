@@ -141,7 +141,7 @@ a {
 .logo {
   color: #00755d;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0px auto 0px 40px;
   display: flex;
@@ -255,7 +255,8 @@ a {
   color: #f0f0f0d1;
 }
 
-.main-slider-text .movie-name strong {
+.main-slider-text .movie-name strong,
+.main-slider-text .movie-name a {
   font-size: 1rem;
   font-weight: 500;
   line-height: 20px;
@@ -339,4 +340,59 @@ a {
   font-size: 25px !important;
   font-weight: 800;
   color: #009c7c;
+}
+
+/* latest */
+
+#latest {
+  max-width: 1170px;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.latest-heading {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #0e0e0ec2;
+  border: 1px solid #161616b9;
+}
+
+.latest-heading h1 {
+  color: #00755d;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+  margin: 20px 0px;
+}
+
+.post-box {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background-color: #0e0e0ec2;
+  border: 1px solid #161616b9;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.post-box .post-img {
+  width: 100%;
+  height: 100%;
+}
+
+.post-box .post-img img {
+  width: 100%;
+  height: 100%;
+  object-position: top center;
+  object-fit: cover;
+}
+
+.main-slider-text .movie-name a:hover {
+  opacity: 0.5;
+  transition: all ease 0.3s;
 }
