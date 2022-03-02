@@ -15,14 +15,91 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./responsive.css">
     <script src="./script.js" defer></script>
-    <script src="./swiper-bundle.min.js"></script>
+
     <script src="./jQuery.js"></script>
     <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
 
-    <link rel="stylesheet" href="./swiper-bundle.min.css">
 </head>
 
 <body>
+
+
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+
+
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <div class="nav-icon"></div>
+        </label>
+        <a href="./index.html" class="logo">Tmovies</a>
+
+        <ul class="menu">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Trailers</a></li>
+            <li><a href="#">Franchises</a></li>
+        </ul>
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+    <section class="movie-banner">
+        <div class="m-banner-img">
+            <img src="./img/welcome to the sticks banner.jpg" alt="welcome to the sticks banner">
+        </div>
+
+        <div class="banner-container">
+
+            <div class="title-container">
+
+                <div class="title-top">
+
+                    <div class="movie-title">
+                        <h1>Welcome to the Sticks</h1>
+                    </div>
+
+                    <div class="more-about-movie">
+                        <span class="quality">High quality</span>
+                        <div class="rating"><img src="./img/IMDB_Logo_2016.svg.png.png" alt="">7.1
+                        </div>
+                        <span>2008</span>
+                        <span>106min</span>
+                    </div>
+
+                    <div class="language">
+                        <span>RUSSIAN - FRENCH</span>
+                    </div>
+
+                </div>
+                <div class="tittle-bottom">
+                    <div class="category">
+                        <strong>category</strong>
+                    </div>
+                    <div class="trailer-btn">
+                        <a href="#" class="watch-btn">Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="play-btn-container">
+            </div>
+
+        </div>
+
+
+    </section>
 
 </body>
 

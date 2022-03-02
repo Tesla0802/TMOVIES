@@ -240,7 +240,8 @@ body {
   padding: 25px;
 }
 
-.main-slider-text .quality {
+.main-slider-text .quality,
+.more-about-movie .quality {
   background-color: #009c7c;
   color: #1d1d1d;
   font-weight: 600;
@@ -494,4 +495,123 @@ footer .logo {
   place-items: center;
   font-weight: 600;
   font-size: 0px;
+}
+
+/* movie-page */
+
+.movie-banner {
+  width: 90%;
+  max-width: 1400px;
+  margin: 10px auto;
+  min-height: 520px;
+  padding: 60px 40px 40px 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.movie-banner::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(49, 49, 49, 0.7);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.m-banner-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.m-banner-img::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 39, 39, 0.7);
+  background: linear-gradient(
+    -90deg,
+    rgba(40 40, 40, 0.2) 0%,
+    rgba(22, 22, 22, 0.3) 100%
+  );
+}
+
+.m-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-container {
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  position: relative;
+}
+
+.title-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-title h1 {
+  color: #009c7c;
+  font-weight: 600;
+  font-size: 2.3rem;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.more-about-movie {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  color: #e9e9e9;
+}
+
+.more-about-movie .rating,
+.more-about-movie span {
+  margin-right: 20px;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.language {
+  margin-top: 20px;
+}
+
+.language span {
+  background-color: #00755eb2;
+  padding: 5px 10px;
+  margin-left: 10px;
+  color: #dfdfdf;
+  font-size: 0.8rem;
+}
+
+.title-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
