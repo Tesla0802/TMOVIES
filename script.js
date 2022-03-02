@@ -26,6 +26,30 @@ let scrollPrecentage = () => {
 window.onscroll = scrollPrecentage;
 window.onload = scrollPrecentage;
 
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 20) {
+    $(".navigation").addClass("fix-icon");
+  } else {
+    $(".navigation").removeClass("fix-icon");
+  }
+});
+
+$(document).on("click", ".play-btn a", function () {
+  $(".play").addClass("active-popup");
+});
+
+$(document).on("click", ".close-movie", function () {
+  $(".play").removeClass("active-popup");
+});
+
+$(".play-btn a").click(function () {
+  $("#m-video")[0].play();
+});
+
+$(".close-movie").click(function () {
+  $("#m-video")[0].pause();
+});
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
