@@ -80,3 +80,56 @@
     height: 500px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .watch-btn {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .movie-moments {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .banner-container {
+    grid-template-columns: 1fr;
+  }
+  .play-btn-container {
+    margin-top: 50px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movie-banner {
+    padding: 20px;
+  }
+  .movie-title h1 {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+  .title-container {
+    justify-content: flex-start;
+  }
+  .more-about-movie span {
+    margin-top: 10px;
+    display: flex;
+  }
+  .rating {
+    margin-bottom: -10px;
+  }
+  .title-bottom {
+    margin-top: 30px;
+  }
+  .play-btn,
+  .play-btn a {
+    width: 50px;
+    height: 50px;
+  }
+  .movie-moments strong {
+    font-size: 1.5rem;
+  }
+}
