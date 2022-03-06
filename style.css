@@ -435,7 +435,11 @@ footer .logo {
   position: fixed;
   left: 40px;
   top: 40px;
-  background-color: #00755e5c;
+  background: conic-gradient(
+    #0058b55c 0deg 90deg,
+    #f6ce005c 90deg 270deg,
+    #0058b55c 270deg 360deg
+  );
   border-radius: 50%;
   width: 60px;
   height: 60px;
