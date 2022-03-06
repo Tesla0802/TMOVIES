@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTREMELY LOUD & INCREDIBLY CLOSE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./script.js" defer></script>
+
+    <script src="./jQuery.js"></script>
+    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
+
+</head>
+
+<body>
+
+
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+
+
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <div class="nav-icon"></div>
+        </label>
+        <a href="./index.html" class="logo">Tmovies</a>
+
+        <ul class="menu">
+            <li><a href="./index.html">Main</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Trailers</a></li>
+            <li><a href="#">Franchises</a></li>
+        </ul>
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+    <section class="movie-banner">
+        <div class="m-banner-img">
+            <img src="./img/extremely lought and incredibly close banner.jpg"
+                alt="extremely lought and incredibly close banner">
+        </div>
+
+        <div class="banner-container">
+
+            <div class="title-container">
+
+                <div class="title-top">
+
+                    <div class="movie-title">
+                        <h1>EXTREMELY LOUD & INCREDIBLY CLOSE</h1>
+                    </div>
+
+                    <div class="more-about-movie">
+                        <span class="quality">High quality</span>
+                        <div class="rating"><img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 6.1
+                        </div>
+                        <span>2011</span>
+                        <span>129min</span>
+                    </div>
+
+                    <div class="language">
+                        <span>Geo - RUS - Eng</span>
+                    </div>
+
+                </div>
+                <div class="title-bottom">
+
+                    <div class="category">
+                        <strong>Category</strong>
+                        <a href="#">Drama</a>
+                    </div>
+
+                    <a href="https://trailers.imovies.cc/movie_files1/54d4ef8c03d88.mp4?md5=P_MsTPhrCeOzkRvf49P2LQ&amp;expires=1646659994&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNToiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC4xMDIgU2FmYXJpLzUzNy4zNiI7czo3OiJyZWZlcmVyIjtzOjIzOiJodHRwczovL3d3dy5pbW92aWVzLmNjLyI7fQ=="
+                        class="watch-btn">Watch Trailer</a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="play-btn-container">
+                <div class="play-btn">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="play" class="play">
+                <a href="javascript:void" class="close-movie">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="play-movie">
+                    <video id="m-video" controls>
+                        <source src="https://api.imovies.cc/api/v1/movies/31484/files/710531" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="movie-details">
+        <strong>EXTREMELY LOUD & INCREDIBLY CLOSE</strong>
+        <p>A troubled young boy, Oskar, is trying to cope with the loss of his father. Oskar starts lashing out at his
+            mother and the world. Until a year later, he discovers a mysterious key in his father's belongings and
+            embarks on a scavenger hunt to find the matching lock, just as he used to when his father was alive. On this
+            journey he is bound to meet a lot of people and learn a lot about himself and his family, but will he ever
+            find the lock?
+        </p>
+    </section>
+
+    <section class="movie-moments">
+        <strong>EXTREMELY LOUD & INCREDIBLY CLOSE</strong>
+        <div class="moment-s-container">
+            <img src="./img/extremely lought and incredibly close movie moment1.jpg"
+                alt="extremely lought and incredibly close movie moment1">
+            <img src="./img/extremely lought and incredibly close movie moment2.jpg"
+                alt="extremely lought and incredibly close movie moment2">
+            <img src="./img/extremely lought and incredibly close movie moment3.jpg"
+                alt="extremely lought and incredibly close movie moment3">
+            <img src="./img/extremely lought and incredibly close movie moment4.jpg"
+                alt="extremely lought and incredibly close movie moment4">
+        </div>
+    </section>
+
+</body>
+
+</html>
