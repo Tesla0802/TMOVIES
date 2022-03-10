@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAND OF BROTHERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./script.js" defer></script>
+
+    <script src="./jQuery.js"></script>
+    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
+
+</head>
+
+<body>
+
+
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+
+
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <div class="nav-icon"></div>
+        </label>
+        <a href="./index.html" class="logo">Tmovies</a>
+
+        <ul class="menu">
+            <li><a href="./index.html">Main</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Trailers</a></li>
+            <li><a href="#">Franchises</a></li>
+        </ul>
+        <form action="" class="search-box">
+            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </nav>
+
+    <section class="movie-banner">
+        <div class="m-banner-img">
+            <img src="./img/band of brothers banner.jpg" alt="band of brothers banner">
+        </div>
+
+        <div class="banner-container">
+
+            <div class="title-container">
+
+                <div class="title-top">
+
+                    <div class="movie-title">
+                        <h1>BAND OF BROTHERS</h1>
+                    </div>
+
+                    <div class="more-about-movie">
+                        <span class="quality">High quality</span>
+                        <div class="rating"><img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 9.5
+                        </div>
+                        <span>2001</span>
+                    </div>
+
+                    <div class="language">
+                        <span>ENG</span>
+                    </div>
+
+                </div>
+                <div class="title-bottom">
+
+                    <div class="category">
+                        <strong>Category</strong>
+                        <a href="#">Drama</a>,<a href="#">Action</a>,
+                        <a href="#">War</a>,
+                        <a href="#">Hisrtory</a>,<a href="#">Adventure</a>
+
+
+                    </div>
+
+                    <a href="https://www.imovies.cc/en/movies/12228/Band-of-Brothers/S01/E02/ENG/HIGH"
+                        class="watch-btn">Watch
+                        all series</a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="play-btn-container">
+                <div class="play-btn">
+                    <a href="#">
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="play" class="play">
+                <a href="javascript:void" class="close-movie">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="play-movie">
+                    <video id="m-video" controls>
+                        <source src="https://api.imovies.cc/api/v1/movies/12228/files/390550" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="movie-details">
+        <strong>BAND OF BROTHERS</strong>
+        <p>This is the story of "E" Easy Company, 506th Regiment of the 101st Airborne Division from their initial
+            training starting in 1942 to the end of World War II. They parachuted behind enemy lines in the early hours
+            of D-Day in support of the landings at Utah beach, participated in the liberation of Carentan and again
+            parachuted into action during Operation Market Garden. They also liberated a concentration camp and were the
+            first to enter Hitler's mountain retreat in Berchtesgaden. A fascinating tale of comradeship that is, in the
+            end, a tale of ordinary men who did extraordinary things.
+        </p>
+    </section>
+
+    <section class="movie-moments">
+        <strong>BAND OF BROTHERS</strong>
+        <div class="moment-s-container">
+            <img src="./img/band of brothers movie moment1.jpg" alt="band of brothers movie moment1">
+            <img src="./img/band of brothers movie moment2.jpg" alt="band of brothers movie moment2">
+            <img src="./img/band of brothers movie moment3.jpg" alt="band of brothers movie moment3">
+            <img src="./img/band of brothers movie moment4.jpg" alt="band of brothers movie moment4">
+        </div>
+    </section>
+
+</body>
+
+</html>
