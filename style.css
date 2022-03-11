@@ -27,7 +27,7 @@ a {
   color: #1d1d1d;
 }
 
-/* hide-default-scroll-bar */
+/* ! hide-default-scroll-bar */
 
 body::-webkit-scrollbar {
   display: none;
@@ -38,7 +38,7 @@ body {
   scrollbar-width: none;
 }
 
-/* navigation */
+/* * navigation */
 
 .navigation {
   display: flex;
@@ -107,7 +107,7 @@ body {
   display: none;
 }
 
-/* menu */
+/* ? menu */
 
 .menu {
   position: fixed;
@@ -161,7 +161,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* search-box */
+/* ! search-box */
 
 .search-box {
   background-color: #d1d1d111;
@@ -193,7 +193,7 @@ body {
   cursor: pointer;
 }
 
-/* slider */
+/* * slider */
 
 #main-slider {
   display: flex;
@@ -354,7 +354,7 @@ body {
   color: #009c7c;
 }
 
-/* latest */
+/* ? latest */
 
 #latest {
   max-width: 1170px;
@@ -409,7 +409,7 @@ body {
   transition: all ease 0.3s;
 }
 
-/* footer */
+/* ! footer */
 
 footer {
   display: flex;
@@ -429,7 +429,7 @@ footer .logo {
   font-weight: 400;
 }
 
-/* fix-menu-btn */
+/* * fix-menu-btn */
 
 .fix-icon .menu-icon {
   position: fixed;
@@ -448,7 +448,7 @@ footer .logo {
   align-items: center;
 }
 
-/* progress-bar */
+/* ? progress-bar */
 
 #progress {
   height: 50px;
@@ -475,7 +475,7 @@ footer .logo {
   font-size: 0px;
 }
 
-/* movie-page */
+/* ! movie-page */
 
 .movie-banner {
   width: 90%;
@@ -623,7 +623,7 @@ footer .logo {
   transition: all ease 0.3s;
 }
 
-/* play-btn */
+/* * play-btn */
 
 .play-btn {
   width: 65px;
@@ -678,7 +678,7 @@ footer .logo {
   z-index: -1;
 }
 
-/* full-movie-video */
+/* ? full-movie-video */
 
 #play {
   display: flex;
@@ -742,7 +742,7 @@ footer .logo {
   margin: 10px 0px;
 }
 
-/* movie-moments */
+/* ! movie-moments */
 
 .movie-moments {
   width: 100%;
