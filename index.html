@@ -1,975 +1,901 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TMOVIES</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
-        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+      integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
     <script src="./script.js" defer></script>
     <script src="./swiper-bundle.min.js"></script>
     <script src="./jQuery.js"></script>
-    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
+    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png" />
 
-    <link rel="stylesheet" href="./swiper-bundle.min.css">
-</head>
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+  </head>
 
-<body>
-
-
+  <body>
     <div id="progress">
-        <span id="progress-value"></span>
+      <span id="progress-value"></span>
     </div>
-
-
 
     <nav class="navigation">
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <div class="nav-icon"></div>
-        </label>
-        <a href="./index.html" class="logo">Tmovies</a>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <div class="nav-icon"></div>
+      </label>
+      <a href="./index.html" class="logo">Tmovies</a>
 
-        <ul class="menu">
-            <li><a href="./index.html">Main</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Lists</a></li>
-            <li><a href="#">Trailers</a></li>
-            <li><a href="#">Franchises</a></li>
-        </ul>
-        <form action="" class="search-box">
-            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      <ul class="menu">
+        <li><a href="./index.html">Main</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Franchises</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </nav>
     <section id="main-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./TG.html" class="main-slide-overlay">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./img/Tokyo ghoul poster.jpg" alt="Tokyo Ghoul" />
+              </div>
 
+              <div class="main-slider-text">
+                <span class="quality"> High quality </span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2014</span>
+                    <strong>Tokyo Ghoul</strong>
+                  </div>
 
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="main-slider-box">
-
-                        <a href="./TG.html" class="main-slide-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div class="main-slider-img">
-                            <img src="./img/Tokyo ghoul poster.jpg" alt="Tokyo Ghoul">
-                        </div>
-
-                        <div class="main-slider-text">
-                            <span class="quality">
-                                High quality
-                            </span>
-                            <div class="bottom-text">
-
-                                <div class="movie-name">
-                                    <span>2014</span>
-                                    <strong>Tokyo Ghoul</strong>
-                                </div>
-
-                                <div class="category-rating">
-                                    <div class="category">
-                                        <a href="#">Horror</a>,<a href="#">Fantasy</a>,<a href="#">Animation</a>
-                                    </div>
-                                    <div class="rating">
-                                        <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 8.0
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Horror</a>,<a href="#">Fantasy</a>,<a href="#"
+                        >Animation</a
+                      >
                     </div>
-                </div>
-
-
-
-
-                <div class="swiper-slide">
-                    <div class="main-slider-box">
-
-                        <a href="./GOTHAM.html" class="main-slide-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div class="main-slider-img">
-                            <img src="./img/gotham poster.jpg" alt="GOTHAM">
-                        </div>
-
-                        <div class="main-slider-text">
-                            <span class="quality">
-                                High quality
-                            </span>
-                            <div class="bottom-text">
-
-                                <div class="movie-name">
-                                    <span>2014</span>
-                                    <strong>GOTHAM</strong>
-                                </div>
-
-                                <div class="category-rating">
-                                    <div class="category">
-                                        <a href="#">Thriller</a>,<a href="#">Crime</a>,<a href="#">TV Series</a>
-                                    </div>
-                                    <div class="rating">
-                                        <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 8.0
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="rating">
+                      <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 8.0
                     </div>
+                  </div>
                 </div>
-
-
-
-
-                <div class="swiper-slide">
-                    <div class="main-slider-box">
-
-                        <a href="./BOB.html" class="main-slide-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div class="main-slider-img">
-                            <img src="./img/band of brothers poster.jpg" alt="BAND OF BROTHERS">
-                        </div>
-
-                        <div class="main-slider-text">
-                            <span class="quality">
-                                High quality
-                            </span>
-                            <div class="bottom-text">
-
-                                <div class="movie-name">
-                                    <span>2001</span>
-                                    <strong>BAND OF BROTHERS</strong>
-                                </div>
-
-                                <div class="category-rating">
-                                    <div class="category">
-                                        <a href="#">Action</a>,<a href="#">War</a>,<a href="#">Hisrtory</a>
-                                    </div>
-                                    <div class="rating">
-                                        <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 9.5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="swiper-slide">
-                    <div class="main-slider-box">
-
-                        <a href="./RUSH HOUR.html" class="main-slide-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div class="main-slider-img">
-                            <img src="./img/Rush hour poster.jpg" alt="RUSH HOUR">
-                        </div>
-
-                        <div class="main-slider-text">
-                            <span class="quality">
-                                High quality
-                            </span>
-                            <div class="bottom-text">
-
-                                <div class="movie-name">
-                                    <span>1998</span>
-                                    <strong>RUSH HOUR</strong>
-                                </div>
-
-                                <div class="category-rating">
-                                    <div class="category">
-                                        <a href="#">Thriller</a>,<a href="#">Comedy</a>,<a href="#">Crime</a>
-                                    </div>
-                                    <div class="rating">
-                                        <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 7.0
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="swiper-slide">
-                    <div class="main-slider-box">
-
-                        <a href="./TESLA.html" class="main-slide-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div class="main-slider-img">
-                            <img src="./img/tesla poster.jpg" alt="TESLA">
-                        </div>
-
-                        <div class="main-slider-text">
-                            <span class="quality">
-                                High quality
-                            </span>
-                            <div class="bottom-text">
-
-                                <div class="movie-name">
-                                    <span>2020</span>
-                                    <strong>TESLA</strong>
-                                </div>
-
-                                <div class="category-rating">
-                                    <div class="category">
-                                        <a href="#">Drama</a>,<a href="#">Biography</a>
-                                    </div>
-                                    <div class="rating">
-                                        <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 5.0
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="swiper-slide">
-                    <div class="main-slider-box">
-
-                        <a href="./МН.html" class="main-slide-overlay">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
-                        <div class="main-slider-img">
-                            <img src="./img/МИР НАИЗНАНКУ poster.jpg" alt="MIR NAIZNANKU">
-                        </div>
-
-                        <div class="main-slider-text">
-                            <span class="quality">
-                                High quality
-                            </span>
-                            <div class="bottom-text">
-
-                                <div class="movie-name">
-                                    <span>2010</span>
-                                    <strong>МИР НАИЗНАНКУ</strong>
-                                </div>
-
-                                <div class="category-rating">
-                                    <div class="category">
-                                        <a href="#">Documentary</a>,<a href="#">Reality-TV</a>,<a href="#">TV
-                                            Series</a>
-                                    </div>
-                                    <div class="rating">
-                                        <img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 8.7
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
+              </div>
             </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./GOTHAM.html" class="main-slide-overlay">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./img/gotham poster.jpg" alt="GOTHAM" />
+              </div>
+
+              <div class="main-slider-text">
+                <span class="quality"> High quality </span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2014</span>
+                    <strong>GOTHAM</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Thriller</a>,<a href="#">Crime</a>,<a href="#"
+                        >TV Series</a
+                      >
+                    </div>
+                    <div class="rating">
+                      <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 8.0
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./BOB.html" class="main-slide-overlay">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img
+                  src="./img/band of brothers poster.jpg"
+                  alt="BAND OF BROTHERS"
+                />
+              </div>
+
+              <div class="main-slider-text">
+                <span class="quality"> High quality </span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2001</span>
+                    <strong>BAND OF BROTHERS</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action</a>,<a href="#">War</a>,<a href="#"
+                        >Hisrtory</a
+                      >
+                    </div>
+                    <div class="rating">
+                      <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 9.5
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./RUSH HOUR.html" class="main-slide-overlay">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./img/Rush hour poster.jpg" alt="RUSH HOUR" />
+              </div>
+
+              <div class="main-slider-text">
+                <span class="quality"> High quality </span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>1998</span>
+                    <strong>RUSH HOUR</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Thriller</a>,<a href="#">Comedy</a>,<a
+                        href="#"
+                        >Crime</a
+                      >
+                    </div>
+                    <div class="rating">
+                      <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 7.0
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./TESLA.html" class="main-slide-overlay">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./img/tesla poster.jpg" alt="TESLA" />
+              </div>
+
+              <div class="main-slider-text">
+                <span class="quality"> High quality </span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2020</span>
+                    <strong>TESLA</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Drama</a>,<a href="#">Biography</a>
+                    </div>
+                    <div class="rating">
+                      <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 5.0
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="main-slider-box">
+              <a href="./МН.html" class="main-slide-overlay">
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <div class="main-slider-img">
+                <img src="./img/МИР НАИЗНАНКУ poster.jpg" alt="MIR NAIZNANKU" />
+              </div>
+
+              <div class="main-slider-text">
+                <span class="quality"> High quality </span>
+                <div class="bottom-text">
+                  <div class="movie-name">
+                    <span>2010</span>
+                    <strong>МИР НАИЗНАНКУ</strong>
+                  </div>
+
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Documentary</a>,<a href="#">Reality-TV</a>,<a
+                        href="#"
+                        >TV Series</a
+                      >
+                    </div>
+                    <div class="rating">
+                      <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 8.7
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
-
-
-
-
-
     <div class="slider-btns">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
 
-
-
-
-
     <section id="latest">
-        <div class="latest-heading">
-            <h1>Movies</h1>
+      <div class="latest-heading">
+        <h1>Movies</h1>
+      </div>
+
+      <div class="post-container">
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="analyze this poster"
+              src="./img/analyze this poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>1999</span>
+                <a href="./ANALYZE THIS.html">ANALYZE THIS</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Horror</a>,<a href="#">Mistery</a>,<a href="#"
+                    >Thriller</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.7
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="post-container">
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="boungo stray dogs poster"
+              src="./img/boungo stray dogs poster.jpg"
+            />
+          </div>
 
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
 
-            <div class="post-box">
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2016</span>
+                <a href="./BSD.html">Boungo stray dogs</a>
+              </div>
 
-                <div class="post-img">
-                    <img alt="analyze this poster" src="./img/analyze this poster.jpg" />
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Comedy</a>,<a href="#">Crime</a>,<a href="#"
+                    >Anime</a
+                  >
                 </div>
 
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>1999</span>
-                            <a href="./ANALYZE THIS.html">ANALYZE THIS</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Horror</a>,<a href="#">Mistery</a>,<a href="#">Thriller</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.7
-                            </div>
-                        </div>
-                    </div>
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.8
                 </div>
+              </div>
             </div>
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="boungo stray dogs poster" src="./img/boungo stray dogs poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2016</span>
-                            <a href="./BSD.html">Boungo stray dogs</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Comedy</a>,<a href="#">Crime</a>,<a href="#">Anime</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.8
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="cast away poster" src="./img/cast away poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2000</span>
-                            <a href="./CAST AWAY.html">cast away</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">drama</a>,<a href="#">adventure</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.8
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="darling in the franxx poster" src="./img/darling in the franxx poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2018</span>
-                            <a href="./DITF.html">darling in the franxx</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Fantasy</a>,<a href="#">Animation</a>,<a href="#">TV Series</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.4
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="extremely lought and incredibly close poster"
-                        src="./img/extremely lought and incredibly close poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2011</span>
-                            <a href="./ELIC.html">extremely lought and incredibly close</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Drama</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.9
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="HOT SHOTS! part delux poster" src="./img/HOT SHOTS! 2 poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>1993</span>
-                            <a href="./Hot Shots.html">HOT SHOTS! PART DEUX</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Action</a>,<a href="#">War</a>,<a href="#">Comedy</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.6
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="hotel transylvania transformania poser"
-                        src="./img/hotel transylvania transformania poser.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2022</span>
-                            <a href="./HT.html">HOTEL TRANSYLVANIA: TRANSFORMANIA</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Family</a>,<a href="#">Comedy</a>,<a href="#">Animation</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="interstellar poster" src="./img/interstellar poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2014</span>
-                            <a href="./interstellar.html">INTERSTELLAR</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Drama</a>,<a href="#">Sci-fi</a>,<a href="#">Adventure</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.6
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="jujutsu kaisen poster" src="./img/jujutsu kaisen poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2020</span>
-                            <a href="#">jujutsu kaisen</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Fantasy</a>,<a href="#">TV Series</a>,<a href="#">Anime</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.7
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="life is beautiful poster" src="./img/life is beautiful poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>1997</span>
-                            <a href="./lib.html">life is beautiful</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">war</a>,<a href="#">Comedy</a>,<a href="#">Romance</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.6
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="little fockers poster" src="./img/little fockers poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2010</span>
-                            <a href="./Little Fockers.html">little fockers</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Comedy</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 5.5
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="luca poster" src="./img/luca poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2021</span>
-                            <a href="./Luca.html">luca </a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Comedy</a>,<a href="#">Animation</a>,<a href="#">Adventure</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.5
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="the third murder poster" src="./img/the third murder poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2017</span>
-                            <a href="./TTM.html">THE THIRD MURDER</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Drama</a>,<a href="#">Mystery</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.7
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="papillon poster" src="./img/papillon poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>1973</span>
-                            <a href="./papillon.html">papillon</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Drama</a>,<a href="#">Biography</a>,<a href="#">Crime</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.0
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="the dark knight poster" src="./img/the dark knight poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2008</span>
-                            <a href="./TDK.html">the dark knight </a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Action</a>,<a href="#">Crime</a>,<a href="#">Thriller</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 9.0
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="the Family poster" src="./img/the family poster.jpg " />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2013</span>
-                            <a href="./The Family.html">the family</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Comedy</a>,<a href="#">Crime</a>,<a href="#">Thriller</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.3
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="the green mile postar" src="./img/the green mile postar.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>1999</span>
-                            <a href="./the green mile.html">the green mile </a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Drama</a>,<a href="#">Mistery</a>,<a href="#">Fantasy</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.5
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="the war with grandpa poster" src="./img/the war with grandpa poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2020</span>
-                            <a href="./TWWG.html">the war with grandpa</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Drama</a>,<a href="#">Comedy</a>,<a href="#">Family</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 5.6
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="tokyo revengers poster" src="./img/tokyo revengers poster.png" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2021</span>
-                            <a href="./TR.html">tokyo revengers</a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Anime</a>,<a href="#">Sci-fi</a>,<a href="#">TV Series</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.3
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-box">
-
-                <div class="post-img">
-                    <img alt="welcome to the sticks poster" src="./img/welcome to the sticks poster.jpg" />
-                </div>
-
-                <div class="main-slider-text">
-
-                    <span class="quality"> High quality</span>
-
-                    <div class="bottom-text">
-
-                        <div class="movie-name">
-                            <span>2008</span>
-                            <a href="./WttS.html">welcome to the sticks </a>
-                        </div>
-
-                        <div class="category-rating">
-
-                            <div class="category">
-                                <a href="#">Comedy</a>
-                            </div>
-
-                            <div class="rating">
-                                <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.1
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
 
+        <div class="post-box">
+          <div class="post-img">
+            <img alt="cast away poster" src="./img/cast away poster.jpg" />
+          </div>
 
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
 
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2000</span>
+                <a href="./CAST AWAY.html">cast away</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">drama</a>,<a href="#">adventure</a>
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.8
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="darling in the franxx poster"
+              src="./img/darling in the franxx poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2018</span>
+                <a href="./DITF.html">darling in the franxx</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Fantasy</a>,<a href="#">Animation</a>,<a href="#"
+                    >TV Series</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.4
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="extremely lought and incredibly close poster"
+              src="./img/extremely lought and incredibly close poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2011</span>
+                <a href="./ELIC.html">extremely lought and incredibly close</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.9
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="HOT SHOTS! part delux poster"
+              src="./img/HOT SHOTS! 2 poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>1993</span>
+                <a href="./Hot Shots.html">HOT SHOTS! PART DEUX</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Action</a>,<a href="#">War</a>,<a href="#"
+                    >Comedy</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="hotel transylvania transformania poser"
+              src="./img/hotel transylvania transformania poser.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2022</span>
+                <a href="./HT.html">HOTEL TRANSYLVANIA: TRANSFORMANIA</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Family</a>,<a href="#">Comedy</a>,<a href="#"
+                    >Animation</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="interstellar poster"
+              src="./img/interstellar poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2014</span>
+                <a href="./interstellar.html">INTERSTELLAR</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">Sci-fi</a>,<a href="#"
+                    >Adventure</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="jujutsu kaisen poster"
+              src="./img/jujutsu kaisen poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2020</span>
+                <a href="./jk.html">jujutsu kaisen</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Fantasy</a>,<a href="#">TV Series</a>,<a href="#"
+                    >Anime</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.7
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="life is beautiful poster"
+              src="./img/life is beautiful poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>1997</span>
+                <a href="./lib.html">life is beautiful</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">war</a>,<a href="#">Comedy</a>,<a href="#"
+                    >Romance</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="little fockers poster"
+              src="./img/little fockers poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2010</span>
+                <a href="./Little Fockers.html">little fockers</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Comedy</a>
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 5.5
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img alt="luca poster" src="./img/luca poster.jpg" />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2021</span>
+                <a href="./Luca.html">luca </a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Comedy</a>,<a href="#">Animation</a>,<a href="#"
+                    >Adventure</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.5
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="the third murder poster"
+              src="./img/the third murder poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2017</span>
+                <a href="./TTM.html">THE THIRD MURDER</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">Mystery</a>
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.7
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img alt="papillon poster" src="./img/papillon poster.jpg" />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>1973</span>
+                <a href="./papillon.html">papillon</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">Biography</a>,<a href="#"
+                    >Crime</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.0
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="the dark knight poster"
+              src="./img/the dark knight poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2008</span>
+                <a href="./TDK.html">the dark knight </a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Action</a>,<a href="#">Crime</a>,<a href="#"
+                    >Thriller</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 9.0
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img alt="the Family poster" src="./img/the family poster.jpg " />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2013</span>
+                <a href="./The Family.html">the family</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Comedy</a>,<a href="#">Crime</a>,<a href="#"
+                    >Thriller</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 6.3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="the green mile postar"
+              src="./img/the green mile postar.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>1999</span>
+                <a href="./the green mile.html">the green mile </a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">Mistery</a>,<a href="#"
+                    >Fantasy</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.5
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="the war with grandpa poster"
+              src="./img/the war with grandpa poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2020</span>
+                <a href="./TWWG.html">the war with grandpa</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Drama</a>,<a href="#">Comedy</a>,<a href="#"
+                    >Family</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 5.6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="tokyo revengers poster"
+              src="./img/tokyo revengers poster.png"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2021</span>
+                <a href="./TR.html">tokyo revengers</a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Anime</a>,<a href="#">Sci-fi</a>,<a href="#"
+                    >TV Series</a
+                  >
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 8.3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-box">
+          <div class="post-img">
+            <img
+              alt="welcome to the sticks poster"
+              src="./img/welcome to the sticks poster.jpg"
+            />
+          </div>
+
+          <div class="main-slider-text">
+            <span class="quality"> High quality</span>
+
+            <div class="bottom-text">
+              <div class="movie-name">
+                <span>2008</span>
+                <a href="./WttS.html">welcome to the sticks </a>
+              </div>
+
+              <div class="category-rating">
+                <div class="category">
+                  <a href="#">Comedy</a>
+                </div>
+
+                <div class="rating">
+                  <img alt="imbd" src="./img/IMDB_Logo_2016.svg.png.png" /> 7.1
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <span class="text">
-            Visit the original site
-        </span>
-        <a href="https://www.imovies.cc/ka" class="logo">iMovies</a>
+      <span class="text"> Visit the original site </span>
+      <a href="https://www.imovies.cc/ka" class="logo">iMovies</a>
     </footer>
-
-
-
-</body>
-
+  </body>
 </html>

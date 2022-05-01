@@ -1,148 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOKYO GHOUL</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
-        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+      integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
     <script src="./script.js" defer></script>
 
     <script src="./jQuery.js"></script>
-    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
+    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png" />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <div id="progress">
-        <span id="progress-value"></span>
+      <span id="progress-value"></span>
     </div>
 
-
-
     <nav class="navigation">
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <div class="nav-icon"></div>
-        </label>
-        <a href="./index.html" class="logo">Tmovies</a>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <div class="nav-icon"></div>
+      </label>
+      <a href="./index.html" class="logo">Tmovies</a>
 
-        <ul class="menu">
-            <li><a href="./index.html">Main</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Lists</a></li>
-            <li><a href="#">Trailers</a></li>
-            <li><a href="#">Franchises</a></li>
-        </ul>
-        <form action="" class="search-box">
-            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      <ul class="menu">
+        <li><a href="./index.html">Main</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Franchises</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </nav>
 
     <section class="movie-banner">
-        <div class="m-banner-img">
-            <img src="./img/tokyo ghoul banner.jpg" alt="tokyo ghoul banner">
+      <div class="m-banner-img">
+        <img src="./img/tokyo ghoul banner.jpg" alt="tokyo ghoul banner" />
+      </div>
+
+      <div class="banner-container">
+        <div class="title-container">
+          <div class="title-top">
+            <div class="movie-title">
+              <h1>TOKYO GHOUL</h1>
+            </div>
+
+            <div class="more-about-movie">
+              <span class="quality">High quality</span>
+              <div class="rating">
+                <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 8.0
+              </div>
+              <span>2014</span>
+            </div>
+
+            <div class="language">
+              <span>JPN</span>
+            </div>
+          </div>
+          <div class="title-bottom">
+            <div class="category">
+              <strong>Category</strong>
+              <a href="#">Action</a>,<a href="#">Drama</a>,<a href="#">Horror</a
+              >, <a href="#">TV series</a>, <a href="#">Fantasy</a>,<a href="#"
+                >Animation</a
+              >
+            </div>
+
+            <a
+              href="https://www.imovies.cc/en/movies/450144885/Tokyo-Ghoul/S01/E02/JPN/HIGH"
+              class="watch-btn"
+              >Watch all series</a
+            >
+          </div>
         </div>
 
-        <div class="banner-container">
-
-            <div class="title-container">
-
-                <div class="title-top">
-
-                    <div class="movie-title">
-                        <h1>TOKYO GHOUL</h1>
-                    </div>
-
-                    <div class="more-about-movie">
-                        <span class="quality">High quality</span>
-                        <div class="rating"><img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 8.0
-                        </div>
-                        <span>2014</span>
-                    </div>
-
-                    <div class="language">
-                        <span>JPN</span>
-                    </div>
-
-                </div>
-                <div class="title-bottom">
-
-                    <div class="category">
-                        <strong>Category</strong>
-                        <a href="#">Action</a>,<a href="#">Drama</a>,<a href="#">Horror</a>,
-                        <a href="#">TV series</a>,
-                        <a href="#">Fantasy</a>,<a href="#">Animation</a>
-
-
-                    </div>
-
-                    <a href="https://www.imovies.cc/en/movies/450144885/Tokyo-Ghoul/S01/E02/JPN/HIGH"
-                        class="watch-btn">Watch all series</a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="play-btn-container">
-                <div class="play-btn">
-                    <a href="#">
-                        <i class="fa-solid fa-play"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="play" class="play">
-                <a href="javascript:void" class="close-movie">
-                    <i class="fa-solid fa-xmark"></i>
-                </a>
-                <div class="play-movie">
-                    <video id="m-video" controls>
-                        <source
-                            src="https://s4113-22.imovies.cc/video/imovie_hash_code/5/2015020100393217_high_jpn.mp4?md5=dV-2PddHX-v-7-ftjo7pMQ&amp;expires=1647427313&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNDoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk5LjAuNDg0NC41MSBTYWZhcmkvNTM3LjM2IjtzOjc6InJlZmVyZXIiO3M6MjM6Imh0dHBzOi8vd3d3Lmltb3ZpZXMuY2MvIjt9"
-                            type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
+        <div class="play-btn-container">
+          <div class="play-btn">
+            <a href="#">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
         </div>
 
-
+        <div id="play" class="play">
+          <a href="javascript:void" class="close-movie">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="play-movie">
+            <video id="m-video" controls>
+              <source
+                src="https://s4113-22.imovies.cc/video/imovie_hash_code/5/2015020100393217_high_jpn.mp4?md5=bltvGunMxk3XINjzJQtuDg&amp;expires=1651493386&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEwMC4wLjQ4OTYuMTI3IFNhZmFyaS81MzcuMzYiO3M6NzoicmVmZXJlciI7czoyNjoiaHR0cHM6Ly93d3cuYWRqYXJhbmV0LmNvbS8iO30="
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="movie-details">
-        <strong>TOKYO GHOUL</strong>
-        <p>The suspense horror/dark fantasy story is set in Tokyo, which is haunted by mysterious "ghouls" who are
-            devouring humans. People are gripped by the fear of these ghouls whose identities are masked in mystery. An
-            ordinary college student named Kaneki encounters Rize, a girl who is an avid reader like him, at the café he
-            frequents. Little does he realize that his fate will change overnight.
-        </p>
+      <strong>TOKYO GHOUL</strong>
+      <p>
+        The suspense horror/dark fantasy story is set in Tokyo, which is haunted
+        by mysterious "ghouls" who are devouring humans. People are gripped by
+        the fear of these ghouls whose identities are masked in mystery. An
+        ordinary college student named Kaneki encounters Rize, a girl who is an
+        avid reader like him, at the café he frequents. Little does he realize
+        that his fate will change overnight.
+      </p>
     </section>
 
     <section class="movie-moments">
-        <strong>TOKYO GHOUL</strong>
-        <div class="moment-s-container">
-            <img src="./img/tokyo ghoul anime moment1.jpg" alt="tokyo ghoul anime moment1">
-            <img src="./img/tokyo ghoul anime moment2.jpg" alt="tokyo ghoul anime moment2">
-            <img src="./img/tokyo ghoul anime moment3.jpg" alt="tokyo ghoul anime moment3">
-            <img src="./img/tokyo ghoul anime moment4.jpg" alt="tokyo ghoul anime moment4">
-        </div>
+      <strong>TOKYO GHOUL</strong>
+      <div class="moment-s-container">
+        <img
+          src="./img/tokyo ghoul anime moment1.jpg"
+          alt="tokyo ghoul anime moment1"
+        />
+        <img
+          src="./img/tokyo ghoul anime moment2.jpg"
+          alt="tokyo ghoul anime moment2"
+        />
+        <img
+          src="./img/tokyo ghoul anime moment3.jpg"
+          alt="tokyo ghoul anime moment3"
+        />
+        <img
+          src="./img/tokyo ghoul anime moment4.jpg"
+          alt="tokyo ghoul anime moment4"
+        />
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
