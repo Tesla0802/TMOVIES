@@ -1,150 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOTEL TRANSYLVANIA: TRANSFORMANIA</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
-        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+      integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
     <script src="./script.js" defer></script>
 
     <script src="./jQuery.js"></script>
-    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
+    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png" />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <div id="progress">
-        <span id="progress-value"></span>
+      <span id="progress-value"></span>
     </div>
 
-
-
     <nav class="navigation">
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <div class="nav-icon"></div>
-        </label>
-        <a href="./index.html" class="logo">Tmovies</a>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <div class="nav-icon"></div>
+      </label>
+      <a href="./index.html" class="logo">Tmovies</a>
 
-        <ul class="menu">
-            <li><a href="./index.html">Main</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Lists</a></li>
-            <li><a href="#">Trailers</a></li>
-            <li><a href="#">Franchises</a></li>
-        </ul>
-        <form action="" class="search-box">
-            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      <ul class="menu">
+        <li><a href="./index.html">Main</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Animes</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Franchises</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </nav>
 
     <section class="movie-banner">
-        <div class="m-banner-img">
-            <img src="./img/hotel transylvania transformania banner.jpg" alt="HOTEL TRANSYLVANIA: TRANSFORMANIA banner">
+      <div class="m-banner-img">
+        <img
+          src="./img/hotel transylvania transformania banner.jpg"
+          alt="HOTEL TRANSYLVANIA: TRANSFORMANIA banner"
+        />
+      </div>
+
+      <div class="banner-container">
+        <div class="title-container">
+          <div class="title-top">
+            <div class="movie-title">
+              <h1>HOTEL TRANSYLVANIA: TRANSFORMANIA</h1>
+            </div>
+
+            <div class="more-about-movie">
+              <span class="quality">High quality</span>
+              <div class="rating">
+                <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 6.1
+              </div>
+              <span>2022</span>
+              <span>87min</span>
+            </div>
+
+            <div class="language">
+              <span>Eng</span>
+            </div>
+          </div>
+          <div class="title-bottom">
+            <div class="category">
+              <strong>Category</strong>
+              <a href="#">Horror</a>,<a href="#">Comedy</a>,<a href="#"
+                >Fantasy</a
+              >, <a href="#">Family</a>, <a shref="#">Animation</a>,<a href="#"
+                >Adventure</a
+              >
+            </div>
+
+            <a
+              href="https://trailers.imovies.cc/movie_files3/60a28965c5068.mp4?md5=4skZICjcFJtWWGZ5gPhrlg&amp;expires=1646657138&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNToiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC4xMDIgU2FmYXJpLzUzNy4zNiI7czo3OiJyZWZlcmVyIjtzOjIzOiJodHRwczovL3d3dy5pbW92aWVzLmNjLyI7fQ=="
+              class="watch-btn"
+              >Watch Trailer</a
+            >
+          </div>
         </div>
 
-        <div class="banner-container">
-
-            <div class="title-container">
-
-                <div class="title-top">
-
-                    <div class="movie-title">
-                        <h1>HOTEL TRANSYLVANIA: TRANSFORMANIA</h1>
-                    </div>
-
-                    <div class="more-about-movie">
-                        <span class="quality">High quality</span>
-                        <div class="rating"><img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 6.1
-                        </div>
-                        <span>2022</span>
-                        <span>87min</span>
-                    </div>
-
-                    <div class="language">
-                        <span>Eng</span>
-                    </div>
-
-                </div>
-                <div class="title-bottom">
-
-                    <div class="category">
-                        <strong>Category</strong>
-                        <a href="#">Horror</a>,<a href="#">Comedy</a>,<a href="#">Fantasy</a>,
-                        <a href="#">Family</a>,
-                        <a shref="#">Animation</a>,<a href="#">Adventure</a>
-                    </div>
-
-                    <a href="https://trailers.imovies.cc/movie_files3/60a28965c5068.mp4?md5=4skZICjcFJtWWGZ5gPhrlg&amp;expires=1646657138&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNToiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC4xMDIgU2FmYXJpLzUzNy4zNiI7czo3OiJyZWZlcmVyIjtzOjIzOiJodHRwczovL3d3dy5pbW92aWVzLmNjLyI7fQ=="
-                        class="watch-btn">Watch Trailer</a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="play-btn-container">
-                <div class="play-btn">
-                    <a href="#">
-                        <i class="fa-solid fa-play"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="play" class="play">
-                <a href="javascript:void" class="close-movie">
-                    <i class="fa-solid fa-xmark"></i>
-                </a>
-                <div class="play-movie">
-                    <video id="m-video" controls>
-                        <source src="https://api.imovies.cc/api/v1/movies/878526327/files/1614651" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
+        <div class="play-btn-container">
+          <div class="play-btn">
+            <a href="#">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
         </div>
 
-
+        <div id="play" class="play">
+          <a href="javascript:void" class="close-movie">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="play-movie">
+            <video id="m-video" controls>
+              <source
+                src="https://api.imovies.cc/api/v1/movies/878526327/files/1614651"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="movie-details">
-        <strong>HOTEL TRANSYLVANIA: TRANSFORMANIA</strong>
-        <p>The fourth and final part of the popular animated comedy franchise "Hotel Transylvania 3: Summer Vacations",
-            about the new adventures of hotel owner Count Dracula and his favorite monster family, in whose dark
-            castle-hotel monsters rest away from civilization and human eyes, where everything rests. Professor Abraham
-            Van Helisgin's mysterious invention, the "beam of monstrosity", breaks down and accidentally turns Dracula
-            and his friends into humans, and John - vice versa - into a monster.
-        </p>
+      <strong>HOTEL TRANSYLVANIA: TRANSFORMANIA</strong>
+      <p>
+        The fourth and final part of the popular animated comedy franchise
+        "Hotel Transylvania 3: Summer Vacations", about the new adventures of
+        hotel owner Count Dracula and his favorite monster family, in whose dark
+        castle-hotel monsters rest away from civilization and human eyes, where
+        everything rests. Professor Abraham Van Helisgin's mysterious invention,
+        the "beam of monstrosity", breaks down and accidentally turns Dracula
+        and his friends into humans, and John - vice versa - into a monster.
+      </p>
     </section>
 
     <section class="movie-moments">
-        <strong>HOTEL TRANSYLVANIA: TRANSFORMANIA</strong>
-        <div class="moment-s-container">
-            <img src="./img/hotel transylvania transformania movie moment1.jpg"
-                alt="hotel transylvania transformania movie moment1">
-            <img src="./img/hotel transylvania transformania movie moment2.jpg"
-                alt="hotel transylvania transformania movie moment2">
-            <img src="./img/hotel transylvania transformania movie moment3.jpg"
-                alt="hotel transylvania transformania movie moment3">
-            <img src="./img/hotel transylvania transformania movie moment4.jpg"
-                alt="hotel transylvania transformania movie moment4">
-        </div>
+      <strong>HOTEL TRANSYLVANIA: TRANSFORMANIA</strong>
+      <div class="moment-s-container">
+        <img
+          src="./img/hotel transylvania transformania movie moment1.jpg"
+          alt="hotel transylvania transformania movie moment1"
+        />
+        <img
+          src="./img/hotel transylvania transformania movie moment2.jpg"
+          alt="hotel transylvania transformania movie moment2"
+        />
+        <img
+          src="./img/hotel transylvania transformania movie moment3.jpg"
+          alt="hotel transylvania transformania movie moment3"
+        />
+        <img
+          src="./img/hotel transylvania transformania movie moment4.jpg"
+          alt="hotel transylvania transformania movie moment4"
+        />
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>

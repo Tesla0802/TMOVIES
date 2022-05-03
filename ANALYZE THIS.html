@@ -1,148 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANALYZE THIS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
-        integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"
+      integrity="sha512-4w/aaXboO6KY1E/dqYwfq09sZnM+XDIcWvmHhfxvMQ+qwK84kxgWtNkAqbFNMLYd6EYA3nSgxTSyif/D3vlVMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
     <script src="./script.js" defer></script>
 
     <script src="./jQuery.js"></script>
-    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png">
+    <link rel="shortcut icon" href="./img/TMOVIES-logo.png.png" />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <div id="progress">
-        <span id="progress-value"></span>
+      <span id="progress-value"></span>
     </div>
 
-
-
     <nav class="navigation">
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <div class="nav-icon"></div>
-        </label>
-        <a href="./index.html" class="logo">Tmovies</a>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <div class="nav-icon"></div>
+      </label>
+      <a href="./index.html" class="logo">Tmovies</a>
 
-        <ul class="menu">
-            <li><a href="./index.html">Main</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Lists</a></li>
-            <li><a href="#">Trailers</a></li>
-            <li><a href="#">Franchises</a></li>
-        </ul>
-        <form action="" class="search-box">
-            <input type="text" name="search" placeholder="Search Movie" class="search-input" required />
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      <ul class="menu">
+        <li><a href="./index.html">Main</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Animes</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Lists</a></li>
+        <li><a href="#">Trailers</a></li>
+        <li><a href="#">Franchises</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Movie"
+          class="search-input"
+          required
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </nav>
 
     <section class="movie-banner">
-        <div class="m-banner-img">
-            <img src="./img/analyze this banner.jpg" alt="analyze this banner">
+      <div class="m-banner-img">
+        <img src="./img/analyze this banner.jpg" alt="analyze this banner" />
+      </div>
+
+      <div class="banner-container">
+        <div class="title-container">
+          <div class="title-top">
+            <div class="movie-title">
+              <h1>ANALYZE THIS</h1>
+            </div>
+
+            <div class="more-about-movie">
+              <span class="quality">High quality</span>
+              <div class="rating">
+                <img src="./img/IMDB_Logo_2016.svg.png.png" alt="" /> 6.7
+              </div>
+              <span>1999</span>
+              <span>103min</span>
+            </div>
+
+            <div class="language">
+              <span>Eng</span>
+            </div>
+          </div>
+          <div class="title-bottom">
+            <div class="category">
+              <strong>Category</strong>
+              <a href="#">Comedy</a>,<a href="#">Crime</a>
+            </div>
+
+            <a
+              href="https://trailers.imovies.cc/movie_files1/54d2fc767cced.mp4?md5=7WFPMTcNVdtTcZWzqAAwcw&amp;expires=1646662056&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNToiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC4xMDIgU2FmYXJpLzUzNy4zNiI7czo3OiJyZWZlcmVyIjtzOjIzOiJodHRwczovL3d3dy5pbW92aWVzLmNjLyI7fQ=="
+              class="watch-btn"
+              >Watch Trailer</a
+            >
+          </div>
         </div>
 
-        <div class="banner-container">
-
-            <div class="title-container">
-
-                <div class="title-top">
-
-                    <div class="movie-title">
-                        <h1>ANALYZE THIS</h1>
-                    </div>
-
-                    <div class="more-about-movie">
-                        <span class="quality">High quality</span>
-                        <div class="rating"><img src="./img/IMDB_Logo_2016.svg.png.png" alt=""> 6.7
-                        </div>
-                        <span>1999</span>
-                        <span>103min</span>
-                    </div>
-
-                    <div class="language">
-                        <span>Eng</span>
-                    </div>
-
-                </div>
-                <div class="title-bottom">
-
-                    <div class="category">
-                        <strong>Category</strong>
-                        <a href="#">Comedy</a>,<a href="#">Crime</a>
-                    </div>
-
-                    <a href="https://trailers.imovies.cc/movie_files1/54d2fc767cced.mp4?md5=7WFPMTcNVdtTcZWzqAAwcw&amp;expires=1646662056&amp;data=YTozOntzOjc6InVzZXJfaXAiO3M6MTQ6IjE3Ni4yMjEuMTY3LjIyIjtzOjEwOiJ1c2VyX2FnZW50IjtzOjExNToiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzk4LjAuNDc1OC4xMDIgU2FmYXJpLzUzNy4zNiI7czo3OiJyZWZlcmVyIjtzOjIzOiJodHRwczovL3d3dy5pbW92aWVzLmNjLyI7fQ=="
-                        class="watch-btn">Watch Trailer</a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="play-btn-container">
-                <div class="play-btn">
-                    <a href="#">
-                        <i class="fa-solid fa-play"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="play" class="play">
-                <a href="javascript:void" class="close-movie">
-                    <i class="fa-solid fa-xmark"></i>
-                </a>
-                <div class="play-movie">
-                    <video id="m-video" controls>
-                        <source src="https://api.imovies.cc/api/v1/movies/3607/files/950402" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
+        <div class="play-btn-container">
+          <div class="play-btn">
+            <a href="#">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
         </div>
 
-
+        <div id="play" class="play">
+          <a href="javascript:void" class="close-movie">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+          <div class="play-movie">
+            <video id="m-video" controls>
+              <source
+                src="https://api.imovies.cc/api/v1/movies/3607/files/950402"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="movie-details">
-        <strong>ANALYZE THIS</strong>
-        <p>Ben Sobol, Psychiatrist, has a few problems: His son spies on his patients when they open up their heart, his
-            parents don't want to attend his upcoming wedding and his patients' problems don't challenge him at all.
-            Paul Vitti, Godfather, has a few problems as well: Sudden anxiety attacks in public, a certain disability to
-            kill people and his best part ceasing service when needed. One day, Ben unfortunately crashes into one of
-            Vitti's cars. The exchange of Ben's business card is followed by a business visit of Don Paul Vitti himself,
-            who wants to be free of inner conflict within two weeks, before all the Mafia Dons meet. Now, Ben Sobol
-            feels somewhat challenged, as his wedding is soon, his only patient keeps him busy by regarding Ben's duty
-            as a 24 hour standby and the feds keep forcing him to spy on Paul Vitti. And how do you treat a patient who
-            usually solves problems with a gun?
-        </p>
+      <strong>ANALYZE THIS</strong>
+      <p>
+        Ben Sobol, Psychiatrist, has a few problems: His son spies on his
+        patients when they open up their heart, his parents don't want to attend
+        his upcoming wedding and his patients' problems don't challenge him at
+        all. Paul Vitti, Godfather, has a few problems as well: Sudden anxiety
+        attacks in public, a certain disability to kill people and his best part
+        ceasing service when needed. One day, Ben unfortunately crashes into one
+        of Vitti's cars. The exchange of Ben's business card is followed by a
+        business visit of Don Paul Vitti himself, who wants to be free of inner
+        conflict within two weeks, before all the Mafia Dons meet. Now, Ben
+        Sobol feels somewhat challenged, as his wedding is soon, his only
+        patient keeps him busy by regarding Ben's duty as a 24 hour standby and
+        the feds keep forcing him to spy on Paul Vitti. And how do you treat a
+        patient who usually solves problems with a gun?
+      </p>
     </section>
 
     <section class="movie-moments">
-        <strong>ANALYZE THIS</strong>
-        <div class="moment-s-container">
-            <img src="./img/analyze this movie moment1.jpg" alt="analyze this movie moment1">
-            <img src="./img/analyze this movie moment2.jpg" alt="analyze this movie moment2">
-            <img src="./img/analyze this movie moment3.jpg" alt="analyze this movie moment3">
-            <img src="./img/analyze this movie moment4.jpg" alt="analyze this movie moment4">
-        </div>
+      <strong>ANALYZE THIS</strong>
+      <div class="moment-s-container">
+        <img
+          src="./img/analyze this movie moment1.jpg"
+          alt="analyze this movie moment1"
+        />
+        <img
+          src="./img/analyze this movie moment2.jpg"
+          alt="analyze this movie moment2"
+        />
+        <img
+          src="./img/analyze this movie moment3.jpg"
+          alt="analyze this movie moment3"
+        />
+        <img
+          src="./img/analyze this movie moment4.jpg"
+          alt="analyze this movie moment4"
+        />
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
